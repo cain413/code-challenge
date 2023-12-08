@@ -6,7 +6,12 @@ for (let index = 0; index < array.length; index++) {
   };
 
 const findFrequency = function(array) {
-  // your code here - don't forget to return an object!
+     const reversedString = string.split("").reverse().join("");
+    if (reversedString === string) {
+      return true; 
+    } else {
+      return false;
+    }
 };
 
 const isPalindrome = function(str) {
