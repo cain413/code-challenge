@@ -6,16 +6,16 @@ for (let index = 0; index < array.length; index++) {
   };
 
 const findFrequency = function(array) {
-     const reversedString = string.split("").reverse().join("");
+      
+};
+
+const isPalindrome = function(str) {
+   const reversedString = string.split("").reverse().join("");
     if (reversedString === string) {
       return true; 
     } else {
       return false;
     }
-};
-
-const isPalindrome = function(str) {
-  // your code here - don't forget to return a boolean!
 };
 
 const largestPair = function(array) {
