@@ -6,7 +6,34 @@ for (let index = 0; index < array.length; index++) {
   };
 
 const findFrequency = function(array) {
-      
+  const tracker = {};
+  for (let index = 0; index < array.length; index++) {
+    const count = tracker[array[index]]
+    if (count === undefined) {
+      tracker[array[index]] = 1
+    } else {
+      tracker[array[index]] += 1;
+    }
+  }
+  
+  console.log("tracker", tracker)
+
+  let most;
+  let least;
+
+  for (const item in tracker) {
+   if (most === undefined || tracker[item] > tracker[most]) {
+      most = item;
+    }
+  }
+
+  for (const item in tracker) {
+   if(least === undefined || tracker[item] < tracker[least]) {
+      least = item;
+    }
+  }
+
+  return {least, most}   
 };
 
 const isPalindrome = function(str) {
