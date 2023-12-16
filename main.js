@@ -4,6 +4,7 @@ for (let index = 0; index < array.length; index++) {
     sum += array[index];
 }
   };
+return findSum
 
 const findFrequency = function(array) {
   const tracker = {};
