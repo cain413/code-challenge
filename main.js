@@ -4,7 +4,7 @@ for (let index = 0; index < array.length; index++) {
     sum += array[index];
 }
   };
-return findSum
+return Sum
 
 const findFrequency = function(array) {
   const tracker = {};
@@ -47,7 +47,14 @@ const reversedString = str.split("").reverse().join("");
 };
 
 const largestPair = function(array) {
-  // your code here - don't forget to return a number!
+  let largest = array[0] * array[1];
+    for (let i = 0; i < array.length - 1; i++) {
+      const product = array[i] * array[i + 1];
+      if(product > largest){
+        largest = product;
+      }
+    }
+    return largest
 };
 
 const removeParenth = function(str) {
