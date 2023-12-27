@@ -3,8 +3,8 @@ const findSum = function(array) {
 for (let index = 0; index < array.length; index++) {
     sum += array[index];
 }
+      return sum;
   };
-return Sum
 
 const findFrequency = function(array) {
   const tracker = {};
