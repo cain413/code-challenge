@@ -58,7 +58,10 @@ const largestPair = function(array) {
 };
 
 const removeParenth = function(str) {
-  // your code here - don't forget to return a string!
+  let stringWithoutParantheses = removeParenth.replaceAll(/[{()}[\]]/g, '');
+      console.log("Orginal String:" + removeParenth);
+      console.log("Final String:" + stringWithoutParantheses)
+      return stringWithoutParantheses
 };
 
 const scoreScrabble = function(str) {
